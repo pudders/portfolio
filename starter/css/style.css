@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+/* Start of CSS */
+
+/* start Header and Navbar */
+header {
+
+  display: flex;
+  padding: 2vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(225, 196, 228);
+  padding: 1% 10% 1% 1vh;
+
+}
+
+h1 {
+  color: rgb(225, 196, 228);
+  margin-left:0px;
+  background-color: rgb(160, 45, 255);
+  padding-left: 5vh;
+  padding-right: 1vh;
+
+}
+
+
+nav a {
+  color: rgb(160, 45, 255);
+  margin: 20px;
+  text-decoration: none;
+  border-bottom: 2px solid rgb(160, 45, 255);
+
+}
+
+nav a:hover {
+
+  color: blueviolet;
+
+}
+
+/* end Header and Navbar */
+
+/* start hero banner */
+
+/* section img {
+
+  width: 100vw;
+  object-fit: contain; */
+
+/* end hero banner */
