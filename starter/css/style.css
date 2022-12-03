@@ -34,40 +34,94 @@ header {
   align-items: center;
   background-color: rgb(225, 196, 228);
   padding: 1% 10% 1% 1vh;
-
 }
 
 h1 {
-  color: rgb(225, 196, 228);
+  color: #F4EEFF;
   margin-left:0px;
-  background-color: rgb(160, 45, 255);
+  background-color: #9EAFFF;
   padding-left: 5vh;
   padding-right: 1vh;
-
 }
 
 
 nav a {
-  color: rgb(160, 45, 255);
+  color: #F4EEFF;
   margin: 20px;
   text-decoration: none;
-  border-bottom: 2px solid rgb(160, 45, 255);
-
+  border-bottom: 2px solid #F4EEFF;
+  font-size: larger;
 }
 
 nav a:hover {
-
   color: blueviolet;
-
 }
 
 /* end Header and Navbar */
 
 /* start hero banner */
 
-/* section img {
+.hero-banner div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-image: linear-gradient(to right, #9EAFFF, #9EAFFF, #F4EEFF);
+}
 
-  width: 100vw;
-  object-fit: contain; */
+section img {
+  width: 10vw;
+}
+
+.hero-banner h2 {
+  margin-right: 10vw;
+  margin-bottom: 3vh;
+  padding: 0.2%;
+  background-image: linear-gradient(to right, #9EAFFF, #F4EEFF);
+}
 
 /* end hero banner */
+
+/* start page layout  */
+
+.page-wrapper {
+
+  margin-left: 10vw;
+}
+
+/* end page layout  */
+
+/* start about me  */
+
+#about {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5vh;
+}
+
+#about h2 {
+  font-size: 5vh;
+  text-align: right;
+  padding: 0vw 1vw 4vh 1vw;
+  border-right: solid 4px #9EAFFF;
+  
+}
+
+#about p {
+  width: 90%;
+  padding-left: 2vw;
+  word-wrap: break-word;
+}
+
+/* end about me  */
+
+/* start work  */
+
+
+
+/* end work  */
+
+/* start contact details  */
+
+
+
+/* end contact details  */
