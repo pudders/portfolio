@@ -83,30 +83,30 @@ section img {
 
 /* start page layout  */
 
-.page-wrapper {
+/* .page-wrapper {
 
   margin-left: 10vw;
-}
+} */
 
 /* end page layout  */
 
 /* start about me  */
 
-#about {
+#about, #contact, #work {
   display: flex;
   align-items: flex-start;
   margin-top: 5vh;
 }
 
-#about h2 {
+#about h2, #work h2, #contact h2 {
   font-size: 5vh;
   text-align: right;
   padding: 0vw 1vw 4vh 1vw;
   border-right: solid 4px #9EAFFF;
-  
+  width: 20vw;
 }
 
-#about p {
+#about p, #contact p, #work p {
   width: 90%;
   padding-left: 2vw;
   word-wrap: break-word;
