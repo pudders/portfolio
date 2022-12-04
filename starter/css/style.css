@@ -106,9 +106,12 @@ section img {
   width: 20vw;
 }
 
-#about p, #contact p, #work p {
+
+
+#about p, #contact p {
   width: 90%;
   padding-left: 2vw;
+  padding-right: 20vw;
   word-wrap: break-word;
 }
 
@@ -116,6 +119,40 @@ section img {
 
 /* start work  */
 
+.work_links {
+  width: 90%;
+  display: grid;
+  padding-left: 2vw;
+  padding-right: 20vw;
+  grid-template-columns: repeat (2, 1fr);
+  grid-template-rows: repeat (4, 1fr);
+  grid-template-areas:  
+  "link_one link_one"
+  "link_two link_three"
+  "link_four link_five"
+  ;
+}
+
+#link_one {
+
+  grid-area: link_one;
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-size:cover;
+  width: 60vw;
+  height: 20vh;
+
+}
+
+.work_links a {
+
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  color: #9EAFFF;
+  padding: 1%;
+  background-color: #F4EEFF;
+  
+}
 
 
 /* end work  */
