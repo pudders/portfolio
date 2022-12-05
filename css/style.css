@@ -64,9 +64,12 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-image: linear-gradient(to right, #9EAFFF, #9EAFFF, #F4EEFF);
+  background-image: url("../images/banner.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  
 }
-
+/* resizing of profile picture */
 section img {
   width: 10vw;
 }
@@ -96,14 +99,16 @@ section img {
   padding: 0vw 1vw 4vh 1vw;
   border-right: solid 4px #9EAFFF;
   width: 20vw;
+  
 }
-
 
 #about p, #contact_details, .work_main {
   width: 90%;
   padding-left: 2vw;
   padding-right: 20vw;
+  margin-left: -4px;  
   word-wrap: break-word;
+  border-left: solid 4px #9EAFFF;
 }
 
 #about p, #contact p  {
@@ -115,6 +120,8 @@ section img {
 
   border-bottom: 2px solid #9EAFFF;
 }
+
+
 
 /* end about me  */
 
@@ -135,7 +142,8 @@ section img {
 
 .gridstyle {
   border:solid 4px #9EAFFF;
-  background-size:cover; /* I decided to use this as I think it looks better to show more of the webpage, although I understand this is not used in the example (hopefully not an issue as I was told we can style it how we like */
+  background-size:auto;
+  background-repeat: no-repeat;
 }
 
 #link_one {
@@ -147,13 +155,13 @@ section img {
 
 #link_two {
   grid-area: link_two;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/link2horiseon.png");
   height: 20vh;
 }
 
 #link_three {
   grid-area: link_three;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/link3prework.png");
   height: 20vh;
  }
 
@@ -204,3 +212,8 @@ section img {
 }
 
 /* end contact details  */
+
+footer {
+
+  height: 5vh;
+}
