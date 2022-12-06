@@ -65,10 +65,11 @@ nav a:hover {
   justify-content: space-between;
   align-items: flex-end;
   background-image: url("../images/banner.jpg");
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  
+
 }
+
 /* resizing of profile picture */
 section img {
   width: 10vw;
@@ -86,32 +87,39 @@ section img {
 
 /* start about me  */
 
-#about, #contact, #work {
+#about,
+#contact,
+#work {
   display: flex;
   align-items: center;
   margin-top: 5vh;
 }
 
-#about h2, #work h2, #contact h2 {
+#about h2,
+#work h2,
+#contact h2 {
   color: #9EAFFF;
   font-size: 5vh;
   text-align: right;
   padding: 0vw 1vw 4vh 1vw;
   border-right: solid 4px #9EAFFF;
   width: 20vw;
-  
+
 }
 
-#about p, #contact_details, .work_main {
+#about p,
+#contact_details,
+.work_main {
   width: 90%;
   padding-left: 2vw;
   padding-right: 20vw;
-  margin-left: -4px;  
+  margin-left: -4px;
   word-wrap: break-word;
   border-left: solid 4px #9EAFFF;
 }
 
-#about p, #contact p  {
+#about p,
+#contact p {
   color: #9EAFFF;
   font-size: 20px;
 }
@@ -131,23 +139,24 @@ section img {
 .work_main {
   display: grid;
   gap: 1rem;
+  grid-template-rows: repeat (4, 1fr);
   grid-template-columns: repeat (2, 1fr);
-  grid-template-rows: repeat (3, 1fr);
-  grid-template-areas:  
-  "link_one link_one"
-  "link_two link_three"
-  "link_four link_five"
+  grid-template-areas:
+    "link_one link_one"
+    "link_one link_one"
+    "link_two link_three"
+    "link_four link_five"
   ;
 }
 
 .gridstyle {
-  border:solid 4px #9EAFFF;
-  background-size:auto;
+  border: solid 4px #9EAFFF;
+  background-size: auto;
   background-repeat: no-repeat;
 }
 
 #link_one {
-  
+
   grid-area: link_one;
   background-image: url("../images/project1.PNG");
   height: 40vh;
@@ -163,7 +172,7 @@ section img {
   grid-area: link_three;
   background-image: url("../images/link3prework.png");
   height: 20vh;
- }
+}
 
 #link_four {
   grid-area: link_four;
@@ -181,7 +190,7 @@ section img {
   display: flex;
   align-items: flex-start;
   height: 100%;
-  width:  100%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -208,7 +217,7 @@ section img {
   align-content: center;
   justify-content: space-evenly;
 
-  
+
 }
 
 /* end contact details  */
@@ -216,4 +225,84 @@ section img {
 footer {
 
   height: 5vh;
+}
+
+/* CSS rules to apply when screen size is between 770px and 979px */
+@media only screen and (min-width: 770px) and (max-width: 979px) {
+
+
+}
+
+/* CSS rules to apply when screen size is between 0px and 769px */
+@media only screen and (min-width: 0px) and (max-width: 769px) {
+  
+
+  .hero-banner h2 {
+    font-size: small;
+    color: rgb(115, 1, 128);
+    margin-right: 10vw;
+    margin-bottom: 3vh;
+    padding: 0.2%;
+    background-image: linear-gradient(to right, #9EAFFF, #F4EEFF);
+  }
+
+  /* stack all grid items vertically */
+  .work_main {
+
+    grid-template-rows: repear(5, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "link_one"
+      "link_two"
+      "link_three"
+      "link_four"
+      "link_five"
+    ;
+  }
+
+  /* make sizes of all images the same  */
+  #link_one {
+
+    height: 20vh;
+  }
+
+  #about,
+  #contact,
+  #work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  /* resize and position of h2 elements */
+
+  #about h2,
+  #work h2,
+  #contact h2 {
+    color: #9EAFFF;
+    font-size: 5vh;
+    padding: 0px;
+    border-right: none;
+    width: max-content;
+
+  }
+
+  #about p,
+  #contact_details,
+  .work_main {
+    width: 90%;
+    padding-top: 2vh;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top: solid 4px #9EAFFF;
+    word-wrap: break-word;
+    border-left: none;
+  }
+
+
+  br {
+    display: none;
+  }
 }
